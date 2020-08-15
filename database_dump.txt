@@ -1,0 +1,11 @@
+﻿ALTER TABLE `job_roles` ADD `accept_refund` BOOLEAN NOT NULL DEFAULT FALSE ;
+
+
+CREATE TABLE IF NOT EXISTS `refund` (
+  `id` bigint(15) NOT NULL AUTO_INCREMENT,
+  `amount` double(15,2) NOT NULL,
+  `staff` varchar(300) NOT NULL,
+  `purpose` text NOT NULL,
+  `add_date` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;

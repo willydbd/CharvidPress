@@ -1,0 +1,25 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule		^(add-staff)/?$						manage-staff.php?page_view=$1					[NC,L,QSA]
+RewriteRule		^(view-all-staff)/?$				manage-staff.php?page_view=$1					[NC,L,QSA]
+RewriteRule		^(edit-staff-info)/?$				manage-staff.php?page_view=$1					[NC,L,QSA]
+RewriteRule		^(delete-staff)/?$					manage-staff.php?page_view=$1					[NC,L,QSA]
+
+RewriteRule		^(add-production-stage)/?$			manage-production.php?page_view=$1				[NC,L,QSA]
+RewriteRule		^(manage-production-stages)/?$		manage-production.php?page_view=$1				[NC,L,QSA]
+
+RewriteRule		^(add-inventory-item)/?$			manage-inventory.php?page_view=$1				[NC,L,QSA]
+RewriteRule		^(manage-inventory)/?$				manage-inventory.php?page_view=$1				[NC,L,QSA]
+
+RewriteRule		^(almost-finished)/?$				stock-report.php?page_view=$1					[NC,L,QSA]
+RewriteRule		^(out-of-stock)/?$					stock-report.php?page_view=$1					[NC,L,QSA]
+
+RewriteRule		^(see-inventory-overview)/?$		inventory-overview.php?page_view=$1				[NC,L,QSA]
+
+RewriteRule		^(accept-refund)/?$					front-desk.php?page_view=$1						[NC,L,QSA]
+RewriteRule		^(new-job)/?$						front-desk.php?page_view=$1						[NC,L,QSA]
+RewriteRule		^(pending-jobs)/?$					front-desk.php?page_view=$1						[NC,L,QSA]
+RewriteRule		^(completed-jobs)/?$				front-desk.php?page_view=$1						[NC,L,QSA]
+
+RewriteRule		^(system-log)/?$					system-log.php?page_view=$1						[NC,L,QSA]
