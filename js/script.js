@@ -1,9 +1,3 @@
-/**
- * @author
- * Banjo Mofesola Paul
- * Chief Developer, Planet NEST
- * mofesolapaul@live.com
- */
 
 // Global vars
 //-----------------------------------------------

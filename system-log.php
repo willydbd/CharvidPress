@@ -169,7 +169,7 @@
 
     </div>
     <!-- /#wrapper -->
-<!-- break -->
+
     <!-- jQuery -->
     <script src="<?php echo $x_link_prefix ?>js/jquery.1.11.3.min.js"></script>
 
