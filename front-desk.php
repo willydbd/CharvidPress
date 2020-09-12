@@ -128,7 +128,7 @@
                         </div>
                         <div class="form-group small">
 
-                            <input type="hidden" name="job_id" value="<? $job_id = new_job_id(); echo $job_id ?>" />
+                            <input type="hidden" name="job_id" value="<?php $job_id = new_job_id(); echo $job_id ?>" />
 
                         	<label class="control-label">Client's name</label>
                             <input type="text" name="client_name" maxlength="80" placeholder="enter client's name" class="form-control" ko="value: client_name, value_update: 'input', enable: !$root.order_submitted()" required />
